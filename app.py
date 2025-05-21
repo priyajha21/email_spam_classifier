@@ -7,13 +7,11 @@ from nltk.stem.porter import PorterStemmer
 
 
 
-# Try to download punkt if not already available
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 
-ps = PorterStemmer()
+
 
 
 def transform_text(text):
