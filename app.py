@@ -11,6 +11,7 @@ import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('punkt_tab')  # Explicitly download the missing resource
+ps = PorterStemmer()
 
 
 
